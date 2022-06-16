@@ -18,7 +18,8 @@ try:
     print(answer)    
     answer = do_something("one")
     print(answer)    
-except:
+except Exception as e:
     print("something went wrong")
+    print (e.args[0])
 
 
